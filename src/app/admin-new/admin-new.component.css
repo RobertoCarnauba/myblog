@@ -1,0 +1,95 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+tr td{
+  border: solid 1px #616161!important;
+  border-left: none!important;
+  border-right: none!important;
+}
+tr td:last-child {
+  width: 130px;
+}
+
+span.w3-button.w3-display-topright {
+  display: none;
+}
+
+.w3-modal-content{
+  position: fixed;
+  width: calc(100vw - 16px) !important;
+  top: calc(50vh - 54px);
+  left: -2px;
+}
+
+.card{
+    font-family: "Raleway", sans-serif;
+    color: #000!important;
+    background-color: #fff!important;
+    margin: 16px!important;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.container{
+    padding: 20px;
+}
+
+p{
+    
+}
+.button, .button-gren{
+    color: #fff!important;
+    background-color: #4CAF50!important;
+    border: 1px solid #ccc!important;
+    margin-right: 4px;
+}
+.button-red{
+    color: #fff!important;
+    background-color: #f44336!important;
+    border: 1px solid #ccc!important;
+}
+.button{
+    padding: 12px 24px!important;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Raleway", sans-serif;
+}
+.button-l{
+    padding: 8px 16px!important;
+    display: inline-block;
+}
+
+label {
+    width: 72px;
+    display: inline-block;
+}
+textarea {
+    width: 100%;
+    margin-top: 12px;
+    overflow: auto;
+
+}

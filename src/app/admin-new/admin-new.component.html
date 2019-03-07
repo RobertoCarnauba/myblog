@@ -1,0 +1,24 @@
+<app-home></app-home>
+    <div class="card">
+      <div class="container">
+        <form #myTemplateVar novalidate action="" mathod="post">
+          <p>
+            <label for="title">Title: </label><input id="title" type=""  />
+          </p>
+          <p>
+            <label for="subtitle">Subtitle: </label><input ng-model="myTemplateVar" id="titlesub" type=""  />
+          </p>
+          <p>
+            <label for="contentText">Content:</label><br />
+            <textarea id="content" rows="10"></textarea>
+          </p>
+          <p style="text-align: center;">
+            <button class="button button-green">Submit</button>
+          </p>
+        </form>
+       <pre>
+          {{ myTemplateVar | json}}
+       </pre>
+      </div>
+    </div>
+    <hr>

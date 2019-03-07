@@ -1,0 +1,32 @@
+<app-home></app-home>
+
+  <!-- Blog entry -->
+  <div class="" style="text-align: right; padding: 0 16px;">
+      <a [routerLink]="['/adminNew']" class="button button-gren">NEW</a>
+  </div>
+  <div class="card">
+    <div class="container container-list">
+      <h3><b>TITLE HEADING</b></h3>
+      <table>
+        <thead>
+          <tr>
+            <th>POST</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let post of posts">
+          <tr>
+            <td>
+                {{ post.title }}<br />
+                {{ post.subtitle }}
+            </td>
+            <td>
+              <a [routerLink]="['/adminEdit']" class="button button-gren button-l">edit</a>
+              <a class="button button-red button-l" onclick="document.getElementById('id01').style.display='block'">del</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
