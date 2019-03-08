@@ -1,12 +1,13 @@
 <app-home></app-home>
     <div class="card">
       <div class="container">
-        <form #myTemplateVar novalidate action="" mathod="post">
+        <form #myTemplateVar="ngForm" novalidate action="" mathod="post">
           <p>
-            <label for="title">Title: </label><input id="title" type=""  />
+            <label for="title">Title: </label><input id="title" type="text" [(ngModel)]="nome" name="nome"  />
           </p>
+          {{myTemplateVar.nome }}
           <p>
-            <label for="subtitle">Subtitle: </label><input ng-model="myTemplateVar" id="titlesub" type=""  />
+            <label for="subtitle">Subtitle: </label><input id="titlesub" type=""  />
           </p>
           <p>
             <label for="contentText">Content:</label><br />
@@ -16,9 +17,6 @@
             <button class="button button-green">Submit</button>
           </p>
         </form>
-       <pre>
-          {{ myTemplateVar | json}}
-       </pre>
       </div>
     </div>
     <hr>

@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ROUTES } from './app.routes';
 import {  RouterModule, Router } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -35,7 +36,8 @@ import { StriphtmlPipe } from './striphtml.pipe';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FormsModule
     
   ],
   providers: [ModalService],

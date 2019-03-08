@@ -12,7 +12,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class PostServico {
-
+	private url = 'http://localhost:3000/posts';
 	constructor(private http: HttpClient) { }
 
 	public getPost(): Promise <Post[]> {
@@ -21,4 +21,11 @@ export class PostServico {
             .toPromise()
 			.then((resposta: any) => resposta)
 	}
+	public getOfertaPorCategoria(id: string): Promise<Post[]> {
+        return this.http.get<Post[]>('http://localhost:3000/posts?id')
+            .toPromise()
+			.then((resposta: any) => resposta)
+			console.log('resposta')
+
+    }
 }
